@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditChiTietThue">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#6BEEFF41"
+        android:text="Chi Tiết Thuê "
+        android:textAlignment="center"
+        android:textColor="#FF5252"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#5218FFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/editTextMaKhach"
+            android:layout_width="124dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Mã khách: "
+            android:textColor="#101117"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/textmakhachedit"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#8F40C4FF"
+            android:ems="10"
+            android:inputType="text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#5618FFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/editTextMaphong"
+            android:layout_width="123dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Mã phòng: "
+            android:textColor="#101117"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/textmaphongedit"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#8F40C4FF"
+            android:ems="10"
+            android:inputType="text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:background="#5918FFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editTextngaythue"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Ngày thuê: "
+                android:textColor="#101117"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/textngaythueedit"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:ems="10"
+                android:inputType="text"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonngthue"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="Chọn" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B740C4FF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <DatePicker
+                    android:id="@+id/datepickerthue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:background="#5E18FFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editTextngaytra"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Ngày trả: "
+                android:textColor="#101117"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/textngaytraedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonngtra"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:text="Chọn" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#BE69BAEF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <DatePicker
+                    android:id="@+id/datepickertra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Date"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="So Ngay" />
+
+        <EditText
+            android:id="@+id/songay"
+            android:layout_width="290dp"
+            android:layout_height="42dp"
+            android:background="#8F40C4FF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#5918FFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/editTexttongtien"
+            android:layout_width="122dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Tổng tiền: "
+            android:textColor="#101117"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/texttongtienedit"
+            android:layout_width="287dp"
+            android:layout_height="58dp"
+            android:background="#8F40C4FF"
+            android:ems="10"
+            android:inputType="text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#6018FFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/editTextDatra"
+            android:layout_width="120dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Đã trả: "
+            android:textColor="#101117"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/textDaTraedit"
+            android:layout_width="304dp"
+            android:layout_height="58dp"
+            android:background="#8F40C4FF"
+            android:ems="10"
+            android:inputType="text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#5918FFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/editTextConLai"
+            android:layout_width="120dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Còn Lại: "
+            android:textColor="#101117"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/textConLaiedit"
+            android:layout_width="291dp"
+            android:layout_height="58dp"
+            android:background="#8F40C4FF"
+            android:ems="10"
+            android:inputType="text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#5918FFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/editTextNhanVienNhan"
+            android:layout_width="120dp"
+            android:layout_height="59dp"
+
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Nhân viên nhận: "
+            android:textColor="#101117"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/textNhanVienNhanedit"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#8F40C4FF"
+            android:ems="10"
+            android:inputType="text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/Edit"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="EDIT" />
+
+
+</LinearLayout>

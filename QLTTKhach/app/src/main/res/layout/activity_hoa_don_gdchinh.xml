@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HoaDonGDChinh"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp">
+
+
+        <TextView
+            android:id="@+id/ngaythue"
+            android:layout_width="122dp"
+            android:layout_height="54dp"
+            android:background="#0740C4FF"
+            android:text="Tìm kiếm : "
+            android:textColor="#131212"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ViewTimKiem"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:hint="Nhập từ khóa tìm kiếm"
+            android:background="#8B64FFDA" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="FIND"
+        android:textColor="#448AFF"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="436dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/gridviewHoaDon"
+                android:layout_width="match_parent"
+                android:layout_height="436dp"
+                android:background="#85B2FF59"
+                android:numColumns="1">
+
+            </GridView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonHoaDon"
+        android:layout_width="52dp"
+        android:layout_height="43dp"
+        android:clickable="true" />
+</LinearLayout>

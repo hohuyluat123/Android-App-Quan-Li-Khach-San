@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HoaDon"
+    android:background="@drawable/hinhnen"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Lập Hóa Đơn"
+        android:textAlignment="center"
+        android:textColor="#EEFF41"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/editTextMaKh"
+            android:layout_width="93dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Mã Khách: "
+            android:textColor="#CEFF5252"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinMaKhach"
+            android:layout_width="235dp"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textMaKhach"
+            android:layout_width="78dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#4040C4FF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/editTextMaDV"
+            android:layout_width="93dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Mã Dịch Vụ: "
+            android:textColor="#CEFF5252"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/textMaDichVu"
+            android:layout_width="235dp"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textMaDV"
+            android:layout_width="78dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#5740C4FF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/editTextMaPhong"
+            android:layout_width="91dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Mã Phòng: "
+            android:textColor="#D3FF5252"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/textMaPhong"
+            android:layout_width="234dp"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textMaPh"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:background="#6540C4FF">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ngaysudung"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="#4040C4FF"
+                android:text="Ngày Sử dụng"
+                android:textColor="#BEFF5252"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textNgaySD"
+                android:layout_width="match_parent"
+                android:layout_height="68dp" />
+
+            <Button
+                android:id="@+id/buttonChonNgSD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CHỌN" />
+        </LinearLayout>
+
+
+        <DatePicker
+            android:id="@+id/calendarSuDung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4040C4FF"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#AB40C4FF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/editTextSoLuong"
+            android:layout_width="93dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Số Lượng: "
+            android:textColor="#D2FF5252"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/textSoLuong"
+            android:layout_width="201dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/XacNhanSL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xác Nhận" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BF40C4FF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/editThanhTien"
+            android:layout_width="185dp"
+            android:layout_height="59dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Thành tiền: "
+            android:textColor="#E4FFFF00"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/textThanhTien"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AE40C4FF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/editTinhTrang"
+            android:layout_width="185dp"
+            android:layout_height="59dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Còn nợ: "
+            android:textColor="#DCFFFF00"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/textConno"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonThemHD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm vào hóa đơn" />
+
+    </LinearLayout>
+
+</LinearLayout>

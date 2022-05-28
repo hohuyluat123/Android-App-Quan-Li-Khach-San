@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5252"
+    android:backgroundTint="#F6F8F4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/editname"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FBF9F9"
+            android:ems="10"
+            android:text="Họ Tên"
+            android:textAlignment="center"
+            android:textColor="#100D0D"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/textName"
+            android:layout_width="203dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#D6CECE"
+            android:backgroundTint="#F3ECEC"
+            android:ems="10"
+            android:hint="Nhập vào họ và tên"
+            android:inputType="textPersonName"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/editpassword"
+            android:layout_width="81dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F6F4F4"
+            android:ems="10"
+            android:text="Mật Khẩu"
+            android:textAlignment="center"
+            android:textColor="#100D0D"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="203dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="#D6CECE"
+            android:backgroundTint="#F3ECEC"
+            android:ems="10"
+            android:hint="Nhập vào mật khẩu"
+            android:inputType="numberPassword"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vaitro"
+                android:layout_width="145dp"
+                android:layout_height="46dp"
+                android:background="#F8F6F6"
+                android:text="Vai trò:"
+                android:textAlignment="center"
+                android:textColor="#0D0E13"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioNhanvien"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:background="#D6CECE"
+                android:text="Nhân viên"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioAdmin"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:background="#D6CECE"
+                android:text="Admin"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:background="#3CB2FF59"
+            android:backgroundTint="#4569F0AE"
+            android:text="Đăng nhập" />
+
+        <Button
+            android:id="@+id/dangky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#6364FFDA"
+            android:backgroundTint="#6A64FFDA"
+            android:text="ĐĂNG KÝ" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:background="@drawable/hotel"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4DBEC"
+        android:text="\nThông Tin Liên Hệ:
+                 \n Trụ Sở Chính: C1 - SH.08 Vinhomes Central Park, 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, TP.HCM
+                 \nC2 - SH.03 Vinhomes Central Park, 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, TP.HCM
+                 \nLô 41 - Vincom Thảo Điền, Quận 2, TP.HCM
+                 \nTầng 9 toà nhà Hoàng Ngọc, số 82 Dịch Vọng Hậu, Duy Tân, Cầu Giấy, HN
+                 \nĐường dây nóng:
+                 \n   * 0901 883 555
+                 \n   * 0901 667 555
+            \nEmail: sales@alphareal.vn"
+        android:textAlignment="viewStart"
+        android:textColor="#616EB5"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>
